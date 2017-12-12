@@ -10,6 +10,83 @@ $green-d: darken($green, 15%);
 
 }
 
+#donation {
+    background-color: #1979A2;
+}
+
+#donation_options {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+#donation h2 {
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+#donation_options section {
+    background-color: #ffffff;
+    padding: 60px;
+    padding:30px;
+}
+
+#footer {
+    background-color: #163443;
+
+  ul {
+   padding:20px;
+
+  }
+
+ ul li {
+   color: #ffffff;
+   opacity: .8;
+   font-size: 1.5em;
+   margin-bottom: 10px;
+
+  a {
+
+    color: #ffffff;
+
+  }
+
+ }
+
+}
+
+.conference ul {
+    margin-top: 20px;
+}
+
+.conference li {
+ text-align: center;
+margin-bottom: 20px;
+}
+
+.conference a {
+font-family: "ff-tisa-web-pro";
+text-align: center;
+color:#0195e1;
+text-align: center;
+font-size: 30px;
+
+
+}
+
+
+.blue_background {
+  color: #ffffff;
+  background-color: #0482c3;
+  font-family: "ff-tisa-web-pro";
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400);
 
@@ -69,7 +146,7 @@ article {
 
 }
 
-.donate {
+.donate a {
 
 color:#ec407a;
 
@@ -109,17 +186,32 @@ font-weight: bold;
 }
 
 .pink {
- background-color: #ec407a;
+ background-color: #ec407a !important;
+
+}
+
+.pink-text {
+  color:#ec407a !important;
 
 }
 
 .blue {
- background-color: #039be5;
+ background-color: #039be5 !important;
+
+}
+
+.blue-text {
+ color:#039be5 !important;
 
 }
 
 .orange_square {
- background-color: #f4511e;
+ background-color: #f4511e !important;
+
+}
+
+.orange-text {
+ color:#f4511e !important;
 
 }
 
@@ -129,7 +221,11 @@ color:#ffffff;
 
 }
 
-
+#donation_options h3 {
+    font-family: "ff-tisa-web-pro";
+    opacity: .8;
+    font-size: 22px;
+}
 
 /*nav*/
 
