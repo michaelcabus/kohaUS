@@ -4,6 +4,390 @@ $pink: #fc2161;
 $pink-d: darken($pink, 15%);
 $green: #77BD42;
 $green-d: darken($green, 15%);
+$blue-text: #039be5;
+$orange-text: #f4511e;
+
+.fa-times-circle::before {
+    content: "\f057";
+
+    font-size: 1.5em;
+}
+
+#donation_options img {
+
+    padding: 10px;
+    width: 250px;
+
+}
+
+#bylaws li {
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#bylaws section {
+    border-bottom: 2px solid #039be5;
+}
+
+#bylaw_directory {
+    background-color: #f4d35d;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#bylaw_directory li {
+    margin-bottom: 30px;
+    border: 2px solid;
+    padding: 20px;
+    font-family: "ff-tisa-web-pro";
+    color: #1c878b;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#bylaws {
+
+  display:block !important;
+}
+
+#administration {
+
+  background-color: #1c878b;
+  h1 {
+    color: #ffffff;
+    font-family: "ff-tisa-web-pro";
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 20px;
+
+  }
+li {
+margin-bottom:20px;
+
+
+  a {
+    color: #a6f2f5 !important;
+    font-weight: bold;
+    font-family: "ff-tisa-web-pro";
+    padding:20px;
+    font-size: 1.5em;
+
+  }
+
+}
+
+}
+
+#members ul {
+    padding: 10px;
+}
+
+#members section {
+    padding: 40px;
+}
+
+#subcommittees {
+    float: right;
+}
+
+#officers {
+ float:left;
+
+}
+
+#leadership li {
+    margin-bottom: 10px;
+    font-family: "ff-tisa-web-pro";
+    color: #000000;
+}
+
+#leadership a {
+   color: #1c878b;
+   font-weight: bold;
+}
+
+#bylaws {
+  h2 {
+    color: #000000;
+    font-family: "ff-tisa-web-pro";
+    font-weight: bold;
+    font-size: 1.6em;
+    padding: 20px;
+
+  }
+
+}
+
+#bylaw_directory {
+background-color:#f4d35d;
+
+}
+
+#leadership {
+  background-color:#f4d35d;
+  display: flex;
+  justify-content: space-between;
+  padding:40px;
+
+h1 {
+  color: #000000;
+  font-family: "ff-tisa-web-pro";
+  font-weight: bold;
+  font-size: 1.6em;
+  padding: 20px;
+
+}
+
+#officers section {
+    padding: 10px;
+}
+
+#subcommittees section {
+    padding: 10px;
+}
+
+
+
+h2 {
+  border: 2px solid;
+padding: 20px;
+font-family: "ff-tisa-web-pro";
+color: #1c878b;
+font-weight: bold;
+font-size: 1.1em;
+}
+
+}
+
+.officer_header {
+  font-family: "ff-tisa-web-pro";
+font-weight: bold;
+border-bottom: 2px solid #039be5;
+
+}
+
+
+#officers ul {
+    text-align: left;
+}
+
+#leadership li {
+    margin-bottom: 10px;
+}
+
+#subcommittees li {
+    text-align: left;
+}
+
+
+
+/*about animation could be on learning page if more content*/
+
+.blocks {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity:0;
+}
+.blocks__block {
+  will-change: transform;
+  position: relative;
+  height: 20vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.blocks__block:nth-child(1) {
+  background: #f4d35d;
+
+}
+.blocks__block:nth-child(2) {
+  background: #db5b4a;
+  -webkit-transform-origin: 25% 100%;
+          transform-origin: 25% 100%;
+}
+.blocks__block:nth-child(3) {
+  background: #e2bb7f;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+}
+.blocks__block:nth-child(4) {
+  background: #f67b7d;
+  -webkit-transform-origin: 75% 100%;
+          transform-origin: 75% 100%;
+}
+.blocks__block:nth-child(5) {
+  background: #a1775a;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+}
+.blocks__block.active {
+  z-index: 2;
+}
+.blocks-content {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  left: 0;
+
+  width: 100%;
+}
+.blocks-content__content {
+  will-change: transform, opacity;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.3s 0.2s ease-out;
+  transition: all 0.3s 0.2s ease-out;
+}
+.blocks-content__content.active {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  visibility: visible;
+}
+.blocks-content .blocks__content-close {
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.blocks-content .blocks__content-close:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.blocks-content p {
+  font-size: 16px;
+  line-height: 2;
+  max-width: 800px;
+}
+.blocks-content h2 {
+  padding: 15px 0px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  font-weight: bold;
+
+}
+.blocks-names {
+
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 4px;
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.blocks-names .blocks__name {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+#about {
+    padding: 40px;
+    padding: 40px;
+display: flex;
+justify-content: space-around;
+}
+
+.red_button {
+    background-color: #db5b4a;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: "ff-tisa-web-pro";
+    font-size: 1.4em;
+}
+
+.orange_button {
+
+  background-color:#f4511e;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: "ff-tisa-web-pro";
+  font-size: 1.4em;
+}
+
+.yellow_button {
+    background-color: #f4d35d;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    font-family: "ff-tisa-web-pro";
+    font-size: 1.4em;
+    opacity: .8;
+}
+
+#about_content {
+  background-color:#f4f4f2;
+  height: 200px;
+}
+
+.blue_text {
+  color:$blue_text;
+
+}
+
+.orange_text {
+color:$orange_text;
+}
 
 .full {
   width:100% !important;
@@ -69,6 +453,7 @@ transform: translateX(50%);
 
 #footer {
     background-color: #163443;
+    margin-top:20px;
 
   ul {
    padding:20px;
@@ -758,6 +1143,40 @@ textarea {
   text-align:right;
 }
 /*Select*/
+
+#learn_content {
+    padding: 20px;
+
+   ul {
+     background-color: #ffffff;
+padding: 20px;
+
+     li {
+        font-family: "ff-tisa-web-pro";
+        margin-bottom: 20px;
+        font-size: 1.1em;
+     }
+
+
+
+   }
+
+  section {
+     margin-bottom: 20px;
+
+  }
+
+}
+
+#learn_content section h2 {
+    padding: 25px;
+    margin-bottom: 20px;
+font-size: 30px;
+font-weight: bold;
+color: #ffffff !important;
+font-family: "ff-tisa-web-pro";
+opacity: .8;
+}
 
 $background: #a0b3b0;
 $select-color: #fff;
