@@ -1,4 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400);
+.fa.fa-newspaper-o {
+  color: #ffffff; }
+
+#footer section {
+  display: flex;
+  justify-content: space-between; }
+
+.fa.fa-newspaper-o {
+  color: #ffffff;
+  padding: 20px;
+  font-size: 30px; }
+
 .fa-times-circle::before {
   content: "\f057";
   font-size: 1.5em; }
@@ -583,7 +595,8 @@ header {
     font-weight: bold;
     padding: 23px;
     font-size: 37px;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: left !important; }
 
 /*animations*/
 @-webkit-keyframes cd-mask-wrapper {
@@ -674,8 +687,6 @@ header {
 /*form */
 .form {
   background: rgba(19, 35, 47, 0.9);
-  padding: 40px;
-  max-width: 600px;
   margin: 40px auto;
   border-radius: 4px;
   box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
@@ -719,9 +730,6 @@ header {
   .tab-group .active a {
     background: #1ab188;
     color: #ffffff; }
-
-.tab-content > div:last-child {
-  display: none; }
 
 h1 {
   text-align: center;
@@ -893,5 +901,71 @@ textarea {
       background: #fff; }
     .select-options li[rel="hide"] {
       display: none; }
+
+/*mobile */
+/* Portrait and Landscape */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column; }
+
+  nav ul li {
+    font-family: "ff-tisa-web-pro";
+    font-weight: bold;
+    padding: 20px; }
+
+  header {
+    background-color: #1c878b;
+    height: initial; }
+
+  #bottom_nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; }
+
+  .secondary {
+    height: initial !important; }
+
+  article {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: column; }
+
+  #about {
+    padding-top: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+
+  #about_content {
+    background-color: #f4f4f2;
+    height: 34%; }
+
+  .col-4-sm {
+    width: 100%; }
+
+  #donation_options {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-direction: column; }
+
+  #donation_options section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px; }
+
+  #donation_options img {
+    padding: 10px;
+    width: 182px; }
+
+  #footer section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,21 @@ $green-d: darken($green, 15%);
 $blue-text: #039be5;
 $orange-text: #f4511e;
 
+.fa.fa-newspaper-o {
+    color: #ffffff;
+}
+
+#footer section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa.fa-newspaper-o {
+    color: #ffffff;
+    padding: 20px;
+    font-size: 30px;
+}
+
 .fa-times-circle::before {
     content: "\f057";
 
@@ -816,6 +831,7 @@ header {
   padding: 23px;
 font-size: 37px;
 line-height: 1.5;
+text-align: left !important;
 
 
      }
@@ -971,8 +987,6 @@ $br: 4px;
 
 .form {
   background:rgba($form-bg,.9);
-  padding: 40px;
-  max-width:600px;
   margin:40px auto;
   border-radius:$br;
   box-shadow:0 4px 10px 4px rgba($form-bg,.3);
@@ -1030,9 +1044,6 @@ font-size:24px;
   }
 }
 
-.tab-content > div:last-child {
-  display:none;
-}
 
 
 h1 {
@@ -1252,4 +1263,94 @@ $select-height: 40px;
       display: none;
     }
   }
+}
+
+/*mobile */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px)
+ {
+
+    nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column;
+}
+
+nav ul li {
+    font-family: "ff-tisa-web-pro";
+    font-weight: bold;
+    padding: 20px;
+}
+
+header {
+    background-color: #1c878b;
+
+    height: initial;
+}
+
+#bottom_nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.secondary {
+    height: initial !important;
+}
+
+article {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#about {
+    padding-top: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+
+#about_content {
+    background-color: #f4f4f2;
+    height: 34%;
+}
+
+.col-4-sm {
+  width: 100%;
+}
+
+#donation_options {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    flex-direction: column;
+}
+
+#donation_options section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#donation_options img {
+    padding: 10px;
+    width: 182px;
+}
+
+#footer section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
 }
